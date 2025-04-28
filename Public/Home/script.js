@@ -1,3 +1,13 @@
+function login(){
+  alert("teste!!");
+}
+
+function signup(){
+  alert("teste!!");
+}
+
+
+// Carrosel
 let current = 0;
 const slides = document.querySelectorAll('.slide');
 
