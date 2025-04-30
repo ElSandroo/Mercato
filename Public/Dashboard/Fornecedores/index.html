@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fornecedores - Mercato</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div class="flex h-screen">
+      <!-- Sidebar -->
+      <div class="hidden md:flex md:flex-shrink-0">
+        <div class="flex flex-col w-64 bg-blue-900">
+          <div class="flex items-center h-16 flex-shrink-0 px-4 bg-blue-900">
+            <div class="flex items-center">
+              <i class="fas fa-store text-white text-2xl mr-2"></i>
+              <span class="text-white text-xl font-semibold">Mercato</span>
+            </div>
+          </div>
+          <div class="flex-1 flex flex-col overflow-y-auto pt-5 pb-4">
+            <nav class="flex-1 px-4 space-y-2">
+              <a href="../index.html" class="flex items-center px-4 py-3 text-sm font-medium text-white rounded-lg hover:bg-blue-800">
+                <i class="fas fa-tachometer-alt mr-3"></i>
+                Dashboard
+              </a>
+              <a href="#" class="flex items-center px-4 py-3 text-sm font-medium text-white rounded-lg hover:bg-blue-800">
+                <i class="fas fa-boxes mr-3"></i>
+                Produtos
+              </a>
+              <a href="#" class="flex items-center px-4 py-3 text-sm font-medium text-white rounded-lg bg-blue-700">
+                <i class="fas fa-warehouse mr-3"></i>
+                Estoque
+              </a>
+              <a href="../Fornecedores/index.html" class="flex items-center px-4 py-3 text-sm font-medium text-white rounded-lg hover:bg-blue-800">
+                <i class="fas fa-truck mr-3"></i>
+                Fornecedores
+              </a>
+              <a href="#" class="flex items-center px-4 py-3 text-sm font-medium text-white rounded-lg hover:bg-blue-800">
+                <i class="fas fa-file-invoice-dollar mr-3"></i>
+                Relatórios
+              </a>
+              <a href="#" class="flex items-center px-4 py-3 text-sm font-medium text-white rounded-lg hover:bg-blue-800">
+                <i class="fas fa-cog mr-3"></i>
+                Configurações
+              </a>
+            </nav>
+          </div>
+          <div class="p-4 border-t border-blue-800">
+            <div class="flex items-center">
+              <img class="h-9 w-9 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User profile">
+              <div class="ml-3">
+                <p class="text-sm font-medium text-white">Admin</p>
+                <p class="text-xs font-medium text-blue-200">admin@mercato.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-6 overflow-auto">
+        <header class="flex justify-between items-center mb-6">
+          <input type="text" placeholder="🔍 Pesquisar fornecedores..." class="px-4 py-2 w-1/3 rounded border border-gray-300" />
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 flex items-center gap-2">
+            <i class="fas fa-plus"></i> Novo Fornecedor
+          </button>
+        </header>
+
+        <section class="grid grid-cols-4 gap-4 mb-6">
+          <div class="bg-white rounded p-4 flex items-center gap-4 shadow">
+            <i class="fas fa-database text-blue-600 text-xl"></i>
+            <div>
+              <div class="text-sm text-gray-500">Total de Fornecedores</div>
+              <div class="text-xl font-bold">42</div>
+            </div>
+          </div>
+          <div class="bg-white rounded p-4 flex items-center gap-4 shadow">
+            <i class="fas fa-check-circle text-green-600 text-xl"></i>
+            <div>
+              <div class="text-sm text-gray-500">Ativos</div>
+              <div class="text-xl font-bold">36</div>
+            </div>
+          </div>
+          <div class="bg-white rounded p-4 flex items-center gap-4 shadow">
+            <i class="fas fa-exclamation-triangle text-yellow-500 text-xl"></i>
+            <div>
+              <div class="text-sm text-gray-500">Pendentes</div>
+              <div class="text-xl font-bold">4</div>
+            </div>
+          </div>
+          <div class="bg-white rounded p-4 flex items-center gap-4 shadow">
+            <i class="fas fa-times-circle text-red-500 text-xl"></i>
+            <div>
+              <div class="text-sm text-gray-500">Inativos</div>
+              <div class="text-xl font-bold">2</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-6">
+          <h2 class="text-lg font-semibold mb-4">Fornecedores Recentes</h2>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="bg-blue-50 rounded p-4 shadow">
+              <div class="flex items-center gap-2 font-semibold text-blue-900">
+                <i class="fas fa-building"></i> TechParts Distribuidora
+              </div>
+              <div class="text-sm text-gray-500 mb-2">CNPJ: 12.345.678/0001-99</div>
+              <div class="text-sm text-gray-700 mb-1">👤 João Silva</div>
+              <div class="text-sm text-gray-700 mb-1">📞 (11) 98765-4321</div>
+              <div class="text-sm text-gray-700 mb-1">✉ contato@techparts.com.br</div>
+              <div class="text-sm text-gray-700">📍 São Paulo, SP</div>
+              <div class="mt-2 flex justify-between items-center">
+                <span class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded">Ativo</span>
+                <div class="flex gap-2">
+                  <i class="fas fa-edit text-blue-600 cursor-pointer"></i>
+                  <i class="fas fa-trash text-red-600 cursor-pointer"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="flex justify-between items-center mb-2">
+            <h2 class="text-lg font-semibold">Todos os Fornecedores</h2>
+            <div class="flex gap-2">
+              <button class="border px-3 py-1 rounded text-sm flex items-center gap-1">
+                <i class="fas fa-filter"></i> Filtrar por status
+              </button>
+              <button class="border px-3 py-1 rounded text-sm flex items-center gap-1">
+                <i class="fas fa-download"></i> Exportar
+              </button>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow overflow-x-auto">
+            <table class="min-w-full text-sm text-left">
+              <thead class="bg-gray-100">
+                <tr>
+                  <th class="px-4 py-2">Fornecedor</th>
+                  <th class="px-4 py-2">CNPJ</th>
+                  <th class="px-4 py-2">Contato</th>
+                  <th class="px-4 py-2">Telefone</th>
+                  <th class="px-4 py-2">Localização</th>
+                  <th class="px-4 py-2">Status</th>
+                  <th class="px-4 py-2">Ações</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t">
+                  <td class="px-4 py-2 font-medium text-blue-900">TechParts Distribuidora<br><span class="text-xs text-gray-500">Componentes eletrônicos</span></td>
+                  <td class="px-4 py-2">12.345.678/0001-99</td>
+                  <td class="px-4 py-2">João Silva</td>
+                  <td class="px-4 py-2">(11) 98765-4321</td>
+                  <td class="px-4 py-2">São Paulo, SP</td>
+                  <td class="px-4 py-2"><span class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded">Ativo</span></td>
+                  <td class="px-4 py-2 flex gap-2">
+                    <i class="fas fa-edit text-blue-600 cursor-pointer"></i>
+                    <i class="fas fa-trash text-red-600 cursor-pointer"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
