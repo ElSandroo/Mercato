@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Simular notificação
-  const notificationBtn = document.querySelector('button:nth-of-type(1)');
-  notificationBtn.addEventListener('click', function () {
-    alert('Você tem 3 notificações não lidas');
-  });
+  // const notificationBtn = document.querySelector('button:nth-of-type(1)');
+  // notificationBtn.addEventListener('click', function () {
+  //   alert('Você tem 3 notificações não lidas');
+  // });
 
   // Botão de ajuda
   const helpBtn = document.querySelector('button:nth-of-type(2)');
